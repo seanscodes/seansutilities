@@ -5,17 +5,6 @@ local Info = Tab:NewSection("Welcome back, "..game.Players.LocalPlayer.Name)
 local UIEdit = Window:NewTab("UI Options")
 local EditUI = UIEdit:NewSection("Customize UI")
 
-themes = {
-    "LightTheme",
-    "DarkTheme",
-    "GrapeTheme",
-    "BloodTheme",
-    "Ocean",
-    "Midnight",
-    "Sentinel",
-    "Synapse",
-}
-
 function makenotif(text)
     game.StarterGui:SetCore("SendNotification", {
         Title = "Sean's Utilities";
@@ -33,10 +22,4 @@ end)
 
 if LocalPlayer.Name == "floppinera" then
 PremiumLabel:UpdateLabel("PREMIUM = TRUE")
-end
-
-for theme, color in pairs(themes) do
-    EditUI:NewColorPicker(theme, "Change your "..theme, color, function(color3)
-        Library:ChangeColor(theme, color3)
-    end)
 end
