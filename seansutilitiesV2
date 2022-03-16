@@ -1,0 +1,20 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Sean's Utilities", "Midnight")
+local Tab = Window:NewTab("Info")
+local Info = Tab:NewSection("Welcome back, "..game.Players.LocalPlayer.Name)
+
+function makenotif(text)
+    game.StarterGui:SetCore("SendNotification", {
+        Title = "Sean's Utilities";
+        Text = text;
+        Duration = 15;
+    })
+end
+
+Info:NewLabel("PREMIUM: False")
+
+Info:NewButton("Support Server", "Join for support and news", function()
+    makenotif("Server link has been copied!")
+    setclipboard("hi")
+end)
+
