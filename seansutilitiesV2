@@ -12,14 +12,13 @@ function makenotif(text)
     })
 end
 
-Info:NewLabel("PREMIUM: False")
+local PremiumLabel = Info:NewLabel("PREMIUM: False")
 
 Info:NewButton("Support Server", "Join for support and news", function()
     makenotif("Server link has been copied!")
     setclipboard("hi")
 end)
 
-
-
-
-
+if LocalPlayer.Name == "floppinera" then
+PremiumLabel:UpdateLabel("PREMIUM = TRUE")
+end
