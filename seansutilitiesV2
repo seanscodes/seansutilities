@@ -1,3 +1,5 @@
+local httpService = game:GetService("HttpService")
+local CheckVersion = httpService:GetAsync("https://pastebin.com/raw/9AR4Zc2j")
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Sean's Utilities", "Midnight")
 local Tab = Window:NewTab("Info")
@@ -11,6 +13,10 @@ function makenotif(text)
         Text = text;
         Duration = 15;
     })
+end
+
+if string.find(CheckVersion, "V0.1") == nil then
+	
 end
 
 local PremiumLabel = Info:NewLabel("PREMIUM: False")
