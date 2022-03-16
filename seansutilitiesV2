@@ -19,9 +19,7 @@ Info:NewButton("Support Server", "Join for support and news", function()
     setclipboard("hi")
 end)
 
-EditUI:NewColorPicker(theme, "Change your "..theme, color, function(color3)
-      Library:ChangeColor(theme, color3)
-end)
+
 
 
 
