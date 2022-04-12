@@ -11,7 +11,7 @@ end
 
 
 
-announce("FKMacro, q to fake macro.")
+announce("FKMacro has loaded, Keybind: ".. _G.Keybind)
 
 
 
@@ -36,8 +36,8 @@ function onButton1Up(mouse)
 end
 
 function onSelected(mouse)
-	mouse.KeyDown:connect(function(k) if k:lower()=="q" then onButton1Down(mouse)end end)
-	mouse.KeyUp:connect(function(k) if k:lower()=="q" then onButton1Up(mouse)end end)
+	mouse.KeyDown:connect(function(k) if k:lower()==_G.Keybind then onButton1Down(mouse)end end)
+	mouse.KeyUp:connect(function(k) if k:lower()==_G.Keybind then onButton1Up(mouse)end end)
 end
 
 
