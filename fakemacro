@@ -13,6 +13,7 @@ end
 
 
 announce("FKMacro has loaded, Keybind: ".. _G.Keybind)
+announce("Executing twice breaks the script!!")
 
 
 
