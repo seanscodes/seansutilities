@@ -45,8 +45,3 @@ end
 
 
 onSelected(game.Players.LocalPlayer:GetMouse())
-
-if _G.Keybind = "" then
-messagebox("FKMacro\n\nError occured\n\nMissing keybind key..\n\nPut on top of the loadstring:\n_G.Keybind = keybind [With quotation marks]\n\nIf this persists our script Is probably down. ","FKMacro By Sean",0)
-script:Destroy()
-end
