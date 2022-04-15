@@ -1,0 +1,7 @@
+local msg = messagebox("Project Usler Selling Tools\n\nWould you like to load usler?\n\nThis Is in beta, so you will be redirected to use RayX selling tools\nRelease will be soon\n\nOK = execute\nNO = abort script","Project Usler",4)
+
+if SupportMSGW == 6 then
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/SpaceYes/Lua/Main/DaHood.Lua'))()
+elseif SupportMSGW == 7 then
+	script:Destroy()
+end
